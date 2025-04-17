@@ -1,0 +1,10 @@
+[[package]]
+name = "rust-example"
+version = "0.1.0"
+dependencies = [
+ "serde 1.0.104",
+]
+
+[[package]]
+name = "serde"
+version = "1.0.104"

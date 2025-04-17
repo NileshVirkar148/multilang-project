@@ -1,0 +1,6 @@
+{
+    "name": "php-example",
+    "require": {
+        "symfony/symfony": "2.8.0"  // Vulnerable version
+    }
+}

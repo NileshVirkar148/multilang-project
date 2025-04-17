@@ -1,0 +1,491 @@
+{
+    "gammaAccess": {
+        "url": "",
+        "token": ""
+    },
+    "repositories": [
+        {
+            "dataDir": "",
+            "repository": {
+                "uid": "569996640c8127d2afe8eb41478543fd",
+                "projectName": "multilang-project",
+                "languages": [
+                    "C_SHARP",
+                    "GO",
+                    "JAVA",
+                    "JAVASCRIPT",
+                    "PHP",
+                    "RUBY",
+                    "PYTHON"
+                ],
+                "sources": {
+                    "baseDir": "",
+                    "exclusions": {
+                        "c_sharp": [
+                            "(?i)(.g.cs|example|mock|assemblyinfo.cs|.AssemblyAttributes.cs|.AnyCPU.Debug|.AnyCPU.Release)"
+                        ],
+                        "go": [
+                            "test"
+                        ],
+                        "java": [
+                            "(?i)(test|generated|mock|thirdparty|third-party|3rd-party|3rdparty|external)"
+                        ],
+                        "javascript": [
+                            "node_modules",
+                            ".min.js",
+                            "dist",
+                            "external",
+                            "assets",
+                            "gulp",
+                            "grunt",
+                            "libs",
+                            "-bundle.js",
+                            ".bundle.js",
+                            "swagger-ui",
+                            ".config.js",
+                            "-config.js",
+                            "UNKNOWN_FILE",
+                            ".git",
+                            ".ebextensions",
+                            "test",
+                            ".lib",
+                            ".library",
+                            ".zip"
+                        ],
+                        "php": [
+                            "vendor",
+                            "wp-content/plugins",
+                            "protected/extensions",
+                            "test"
+                        ],
+                        "ruby": [
+                            "test"
+                        ],
+                        "python": [
+                            "_init_.py",
+                            "test"
+                        ]
+                    }
+                }
+            },
+            "settings": {
+                "C_SHARP": {
+                    "additionalOptions": [],
+                    "includePaths": []
+                },
+                "GO": {
+                    "additionalOptions": [],
+                    "includePaths": []
+                },
+                "JAVA": {
+                    "additionalOptions": [],
+                    "includePaths": []
+                },
+                "JAVASCRIPT": {
+                    "additionalOptions": [],
+                    "includePaths": []
+                },
+                "PHP": {
+                    "additionalOptions": [],
+                    "includePaths": []
+                },
+                "RUBY": {
+                    "additionalOptions": [],
+                    "includePaths": []
+                },
+                "PYTHON": {
+                    "additionalOptions": [],
+                    "includePaths": []
+                }
+            },
+            "modules": {
+                "CODE_ISSUES": [
+                    {
+                        "language_name": "all",
+                        "name": "sca",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "GO",
+                        "name": "staticcheck",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "PHP",
+                        "name": "phpmd",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "RuleSets",
+                                    "type": "multiselect",
+                                    "value": [
+                                        "cleancode",
+                                        "codesize",
+                                        "controversial",
+                                        "design",
+                                        "naming",
+                                        "unusedcode"
+                                    ],
+                                    "choices": [
+                                        "cleancode",
+                                        "codesize",
+                                        "controversial",
+                                        "design",
+                                        "naming",
+                                        "unusedcode"
+                                    ],
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "PYTHON",
+                        "name": "dlint",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "PHP",
+                        "name": "phpcs",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "JAVASCRIPT",
+                        "name": "eslint",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "JAVASCRIPT",
+                        "name": "jshint",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "all",
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "RUBY",
+                        "name": "brakeman",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "PYTHON",
+                        "name": "embold_aux",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "JAVA",
+                        "name": "embold_aux",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "JAVA",
+                        "name": "gamma_java",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "C_SHARP",
+                        "name": "microsoft_security_codescan",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "C_SHARP",
+                        "name": "gamma_cs",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "JAVA",
+                        "name": "pmd",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "javaVersion",
+                                    "type": "text",
+                                    "value": "1.8",
+                                    "required": false
+                                },
+                                {
+                                    "name": "ruleSets",
+                                    "type": "text",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "JAVASCRIPT",
+                        "name": "gamma_js",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "PYTHON",
+                        "name": "bandit",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "PYTHON",
+                        "name": "pylint",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "language_name": "GO",
+                        "name": "gosec",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ],
+                "COVERAGE": [
+                    {
+                        "language_name": "JAVASCRIPT",
+                        "name": "istanbul",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "JAVA",
+                        "name": "jacoco",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "binaryReportPath",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": false
+                                },
+                                {
+                                    "name": "isRecursive",
+                                    "type": "text",
+                                    "value": "true",
+                                    "required": false
+                                },
+                                {
+                                    "name": "xmlReportPath",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "C_SHARP",
+                        "name": "coverlet",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "PYTHON",
+                        "name": "coveragepy",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "JAVA",
+                        "name": "clover",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "RELEVANCE": [
+                    {
+                        "language_name": "all",
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ],
+                "EXT_REPORT_PROCESSOR": [
+                    {
+                        "language_name": "all",
+                        "name": "ext_report_processor",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ],
+                "UNIT_TESTS": [
+                    {
+                        "language_name": "C_SHARP",
+                        "name": "mstest",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "language_name": "JAVA",
+                        "name": "junit",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

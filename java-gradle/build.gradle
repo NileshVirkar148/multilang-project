@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Vulnerable version of Apache Commons Collections
+    implementation 'commons-collections:commons-collections:3.2.1'
+}

@@ -1,0 +1,10 @@
+{
+    "name": "nodejs-example",
+    "version": "1.0.0",
+    "dependencies": {
+      "lodash": "4.0.0" // Vulnerable version
+    },
+    "scripts": {
+      "start": "node index.js"
+    }
+  }
