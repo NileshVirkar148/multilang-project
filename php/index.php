@@ -1,8 +1,14 @@
 <?php
-require 'vendor/autoload.php';
+// Added a new PHP function for greeting
+function greet($name) {
+    return "Hello, $name!";
+}
 
-use Symfony\Component\HttpFoundation\Request;
+// Added a new PHP function for math operations
+function add($a, $b) {
+    return $a + $b;
+}
 
-echo "Hello, PHP!\n";
-$request = Request::createFromGlobals();
-echo "Symfony Request created\n";
+function subtract($a, $b) {
+    return $a - $b;
+}

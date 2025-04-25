@@ -1,4 +1,11 @@
-require 'rails'
+def greet(name)
+  "Hello, #{name}!"
+end
 
-puts "Hello, Ruby!"
-puts "Rails version: #{Rails::VERSION::STRING}"
+def add(a, b)
+  a + b
+end
+
+def subtract(a, b)
+  a - b
+end
