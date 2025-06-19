@@ -12,6 +12,7 @@ public class HelloWorld {
             System.out.println("text");
             System.out.println("text");
             System.out.println("text");
+            System.out.println("text");
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("text");
