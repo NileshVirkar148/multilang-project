@@ -15,6 +15,7 @@ public class HelloWorld {
             e.printStackTrace();
             System.out.println("text");
             System.out.println("text");
+            System.out.println("text");
         }
     }
 }
