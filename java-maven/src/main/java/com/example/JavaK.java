@@ -12,6 +12,11 @@ public class Java1 {
             System.out.println("text");
             System.out.println("text");
             System.out.println("text");
+            System.out.println("text");
+            System.out.println("text");
+            System.out.println("text");
+            System.out.println("text");
+            System.out.println("text");
         } catch (Exception e) {
             e.printStackTrace();
         }
