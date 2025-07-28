@@ -8,7 +8,7 @@ public class Java1 {
         try {       
             ObjectMapper mapper = new ObjectMapper();
             System.out.println("Jackson version: " + mapper.getClass().getPackage().getImplementationVersion());
-            System.out.println("text");                      
+            System.out.println("text");                           
             System.out.println("text");
             System.out.println("text");
         } catch (Exception e) {
